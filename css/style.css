@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Steppe-Book';
+    src: url(../fonts/Steppe-Book.ttf);
+}
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url(../fonts/Steppe-ExtraBold.ttf);
+}
+
+body {
+    font-family: 'Steppe-Book', sans-serif;
+    background-color: #5243F4;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type:  none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 222;
+
+}
+
+/* HEADER START  */
+.header {
+    padding: 40px 0 201px 0;
+}
+.header__logo{
+    padding-right: 250px;
+}
+.header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__nav-link {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    line-height: 130%;
+}
+
+.nav-link {
+    transition: color 1s ease-in-out;
+}
+.nav-link:hover {
+    color: #cdcdcd;
+}
+/* HEADER END  */
+
+/* COVER START  */
+.cover__title {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 90px;
+    line-height: 100%;
+    max-width: 861px;
+    padding-bottom: 20px;
+}
+.cover__paragraph {
+    max-width: 697px;
+    font-size: 18px;
+    line-height: 130%;
+    padding-bottom: 40px;
+}
+.cover__button a{
+    font-size: 18px;
+    color: #5243f4;
+    padding: 18px 46px;
+    border-radius: 60px;
+    background-color: #fff;
+    transition: background-color 1s ease-in-out;
+}
+.cover__button a:hover{
+    background-color: #cdcdcd;
+}
+.cover-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 111;
+}
+/* COVER END  */
+
