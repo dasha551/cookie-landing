@@ -25,6 +25,40 @@ li {
     list-style-type:  none;
 }
 
+.currency{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    height: 25px;
+    min-width: 25px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 20px;
+    z-index: 999;
+    user-select: none;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -53,6 +87,7 @@ li {
 }
 
 .nav-link {
+    cursor: pointer;
     transition: color 1s ease-in-out;
 }
 .nav-link:hover {
@@ -75,6 +110,7 @@ li {
     padding-bottom: 40px;
 }
 .cover__button a{
+    cursor: pointer;
     font-size: 18px;
     color: #5243f4;
     padding: 18px 46px;
