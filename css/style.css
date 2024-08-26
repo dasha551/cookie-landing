@@ -98,6 +98,9 @@ li {
     padding-top: 350px;
 }
 /* ITEMS START  */
+.main__section-items{
+    position: relative;
+}
 .items-title{
     font-size: 60px;
     font-family: 'Steppe-ExtraBold', sans-serif;
@@ -132,6 +135,7 @@ li {
     right: 20px;
 }
 .cookie-name {
+    font-family: 'Steppe-ExtraBold', sans-serif;
     font-size: 18px;
     padding-bottom: 19px;
 }
@@ -153,6 +157,7 @@ li {
     gap: 8px;
 }
 .cookie-price {
+    font-family: 'Steppe-ExtraBold', sans-serif;
     font-size: 24px;
     color: #5243f4;
 }
@@ -217,12 +222,13 @@ li {
 /* POST END  */
 
 /* ORDER START  */
-
+.main__section-order{
+    position: relative;
+}
 .main__section-order .container{
     background-image: url(../images/cookie-bg.png);
     background-repeat: no-repeat;
     padding-bottom: 102px;
-
 }
 .order-title {
     padding-bottom: 103px;
@@ -268,6 +274,7 @@ li {
 }
 
 .order__form-inputs input {
+    outline:none;
     color: #fff;
     font-size: 18px;
     padding-left: 24px;
@@ -328,13 +335,14 @@ li {
 .line2{
     position: absolute;
     z-index: -1;
-    top: -40;
+    top: -40px;
     left: 0;
 }
 .line3{
     position: absolute;
     z-index: -1;
     left: 0;
-    margin-top: 80px;
+    top: -920px;
+
 }
 /* LINE END  */
